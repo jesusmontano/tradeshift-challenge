@@ -18,6 +18,12 @@ class App extends React.Component {
     }
   }
 
+  update(field) {
+    return (e) => {
+      this.setState({ [field]: e.target.value })
+    };
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     return this.setState({ type: determineType(this.state.side1, this.state.side2, this.state.side3) });
