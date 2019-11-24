@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { hasAllPositiveSides, determineType } from './util/helpers';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +17,12 @@ class App extends React.Component {
       type: ''
     }
   }
-  
+
+  handleSubmit(e) {
+    e.preventDefault();
+    return this.setState({ type: determineType(this.state.side1, this.state.side2, this.state.side3) });
+  }
+
   render() {
     return (
     <div className="App">
