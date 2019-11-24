@@ -2,8 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.state = {
+      side1: '',
+      side2: '',
+      side3: '',
+      type: ''
+    }
+  }
+  
+  render() {
+    return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,7 +34,8 @@ function App() {
         </a>
       </header>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
