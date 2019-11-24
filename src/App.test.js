@@ -27,6 +27,9 @@ describe('isTriangle', () => {
 
     const triangle2 = isTriangle(1, 1, 2);
     expect(triangle2).toEqual(false)
+
+    const triangle3 = isTriangle(1, 2, 3);
+    expect(triangle3).toEqual(false);
   })
 
   it("Returns true when the sides form a valid triangle.", () => {
