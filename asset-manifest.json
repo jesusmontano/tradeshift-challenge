@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/tradeshift-challenge/static/css/main.b1533579.chunk.css",
+    "main.js": "/tradeshift-challenge/static/js/main.f2d5855f.chunk.js",
+    "main.js.map": "/tradeshift-challenge/static/js/main.f2d5855f.chunk.js.map",
+    "runtime-main.js": "/tradeshift-challenge/static/js/runtime-main.337f2dbc.js",
+    "runtime-main.js.map": "/tradeshift-challenge/static/js/runtime-main.337f2dbc.js.map",
+    "static/css/2.17a8fbb8.chunk.css": "/tradeshift-challenge/static/css/2.17a8fbb8.chunk.css",
+    "static/js/2.62457508.chunk.js": "/tradeshift-challenge/static/js/2.62457508.chunk.js",
+    "static/js/2.62457508.chunk.js.map": "/tradeshift-challenge/static/js/2.62457508.chunk.js.map",
+    "index.html": "/tradeshift-challenge/index.html",
+    "precache-manifest.82b7114c533a9498f5560aa5bcd2bfb4.js": "/tradeshift-challenge/precache-manifest.82b7114c533a9498f5560aa5bcd2bfb4.js",
+    "service-worker.js": "/tradeshift-challenge/service-worker.js",
+    "static/css/2.17a8fbb8.chunk.css.map": "/tradeshift-challenge/static/css/2.17a8fbb8.chunk.css.map",
+    "static/css/main.b1533579.chunk.css.map": "/tradeshift-challenge/static/css/main.b1533579.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.337f2dbc.js",
+    "static/css/2.17a8fbb8.chunk.css",
+    "static/js/2.62457508.chunk.js",
+    "static/css/main.b1533579.chunk.css",
+    "static/js/main.f2d5855f.chunk.js"
+  ]
+}
