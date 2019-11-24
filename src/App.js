@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { hasAllPositiveSides, determineType } from './util/helpers';
 import '@tradeshift/elements'

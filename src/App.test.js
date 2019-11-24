@@ -71,3 +71,23 @@ describe('determineType', () => {
     expect(triangle2).toEqual('Isosceles');
   })
 })
+
+describe('hasAllPositiveSides', () => {
+  it("Returns false when any one of the sides is not a positive number.", () => {
+    const triangle = hasAllPositiveSides(1, 2, -1);
+    expect(triangle).toEqual(false);
+  })
+
+  it("Returns false when any one of the sides is not a number.", () => {
+    const triangle = hasAllPositiveSides(1, 2, '');
+    expect(triangle).toEqual(false);
+
+    const triangle2 = hasAllPositiveSides('two', 2, 'sdfkjg');
+    expect(triangle2).toEqual(false);
+  })
+
+  it("Returns true when all of the sides have a positive length.", () => {
+    const triangle = hasAllPositiveSides(3, 2, 4);
+    expect(triangle).toEqual(true);
+  })
+})
