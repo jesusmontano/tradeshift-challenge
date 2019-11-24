@@ -7,3 +7,5 @@
 //   ReactDOM.render(<App />, div);
 //   ReactDOM.unmountComponentAtNode(div);
 // });
+
+import { isTriangle, hasAllPositiveSides, determineType } from './util/helpers';
