@@ -1,3 +1,4 @@
+// isTriangle is a function that determines whether 3 sides can form a triangle.
 export const isTriangle = function (side1, side2, side3) {
     if (
         Number(side1) >= Number(side2) + Number(side3) ||
@@ -11,6 +12,7 @@ export const isTriangle = function (side1, side2, side3) {
     return true;
 }
 
+// determineType is a function that determines what type of triangle 3 sides form.
 export const determineType = function (side1, side2, side3) {
     let sides = [Number(side1), Number(side2), Number(side3)];
 
@@ -29,6 +31,8 @@ export const determineType = function (side1, side2, side3) {
     }
 }
 
+// hasAllPositveSides is a function that determines whether all 3 sides are positive numbers.
+// This function is used in App.js to either enable or disable the submit button.
 export const hasAllPositiveSides = function (side1, side2, side3) {
     if (
         Number(side1) <= 0 ||
