@@ -33,7 +33,7 @@ class App extends React.Component {
     return this.setState({ type: determineType(this.state.side1, this.state.side2, this.state.side3) });
   }
 
-  checkValidLength(side) { // Function responsible for returning the appropriate feedback/error message.
+  determineFeedback(side) { // Function responsible for returning the appropriate feedback/error message.
     if (side === '') { // In this case, the input field is empty.
       return (
         <div className="input-errors">
@@ -62,9 +62,9 @@ class App extends React.Component {
   }
 
   render() {
-    let side1Feedback = this.checkValidLength(this.state.side1); // Feedback/error message for first side input.
-    let side2Feedback = this.checkValidLength(this.state.side2); // Feedback/error message for second side input.
-    let side3Feedback = this.checkValidLength(this.state.side3); // Feedback/error message for third side input.
+    let side1Feedback = this.determineFeedback(this.state.side1); // Feedback/error message for first side input.
+    let side2Feedback = this.determineFeedback(this.state.side2); // Feedback/error message for second side input.
+    let side3Feedback = this.determineFeedback(this.state.side3); // Feedback/error message for third side input.
     let impossibleTriangleMessage = this.state.type === 'Not Possible' ? <ts-note type="neutral" icon="remove">No one side can be greater than or equal to the sum of the two others.</ts-note> : '';
     let button = hasAllPositiveSides(this.state.side1, this.state.side2, this.state.side3) ? <ts-button onClick={this.handleSubmit} type="primary">Submit</ts-button> : <ts-button disabled="true" type="primary">Submit</ts-button>
     // If all of the inputs have positive side lengths, the submit button is enabled, otherwise it's disabled.
