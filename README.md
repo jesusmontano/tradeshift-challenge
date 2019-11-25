@@ -44,4 +44,6 @@ that contains functions responsible for detemining whether three sides can form
 a triangle, what type of triangle three sides form, and whether all 
 input side lengths are greater than zero.
 
+Tests can be found at `src/App.test.js`.
+
 
