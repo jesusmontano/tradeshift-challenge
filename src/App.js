@@ -8,7 +8,6 @@ import '@tradeshift/elements/src/vars.css'
 import '@tradeshift/elements.icon'
 import '@tradeshift/elements.note'
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -105,7 +104,7 @@ class App extends React.Component {
           <h1>{this.state.type}</h1>
           {impossibleTriangleMessage}
         </div>
-      </div>
+     </div>
     )
   }
 }

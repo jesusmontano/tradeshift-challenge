@@ -11,7 +11,18 @@ From the project directory, run the following:
 
 * `npm test` to launch the test runner.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Discussion
 
-[Live Link](https://jesusmontano.github.io/tradeshift-challenge/)
+This project was bootstrapped with [`create-react-app`](https://github.com/facebook/create-react-app). 
+I chose to use `create-react-app` because it provides a ready-made application starter, meaning I
+can start building an app right away without having to deal with Webpack and Babel configurations, as well
+as a built-in testing environment.
+
+I used [`Tradeshift Elements`](https://github.com/Tradeshift/elements) to build this application's 
+user interface. `Tradeshift Elements` allowed me to integrate reusable Tradeshift UI components into 
+my application.
+
+## Live Link
+
+[Tradeshift Triangle Challenge](https://jesusmontano.github.io/tradeshift-challenge/)
 
